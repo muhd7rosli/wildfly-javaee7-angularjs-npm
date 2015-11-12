@@ -1,4 +1,5 @@
 # Wildfly JavaEE 7 AngularJS Webapp with NPM support
+[![Build Status](https://travis-ci.org/muhd7rosli/wildfly-javaee7-angularjs-npm.svg?branch=master)](https://travis-ci.org/muhd7rosli/wildfly-javaee7-angularjs-npm)
 
 This template has custom Java EE directory structure to integrate Java EE development backend with
 frontend web development. The Java EE provide REST API service to the frontend application. The frontend development 
