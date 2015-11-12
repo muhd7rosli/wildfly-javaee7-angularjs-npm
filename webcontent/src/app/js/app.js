@@ -1,7 +1,7 @@
 /**
  * @author Muhammad Rosli <muhd7rosli@live.com>
  */
-var simpleApp = angular.module('simpleApp', ['ngRoute']);
+var simpleApp = angular.module('simpleApp', ['ngRoute', 'ngResource']);
 
 var routeConfig = function($routeProvider){
     $routeProvider
@@ -23,11 +23,26 @@ var routeConfig = function($routeProvider){
 routeConfig.$inject = ['$routeProvider'];
 simpleApp.config(routeConfig);
 
-var SimpleController = function($scope){
+var SimpleController = function($scope, $http){
+
+    $scope.greeting = {"info" : "Loading"};
+
+    $http({
+        method: 'GET',
+        url: '/wildfly-javaee7-angularjs/rest/helloworld',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).success(function (data) {
+        // this callback will be called asynchronously
+        // when the response is available
+        $scope.greeting = data;
+    });
+
 
 
 };
-SimpleController.$inject = ['$scope'];
+SimpleController.$inject = ['$scope', '$http'];
 
 var LoginController = function($scope){
     
