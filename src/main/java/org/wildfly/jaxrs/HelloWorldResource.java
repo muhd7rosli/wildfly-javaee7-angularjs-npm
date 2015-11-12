@@ -22,8 +22,8 @@ public class HelloWorldResource {
     @Produces("application/json")
     public String getJsonMessage() {
         // return some cliched textual content
-        return "{\"info\": \"Welcome to the demo of Wildfly, Java EE7 and AngularJS. This message is retrieved" +
-                "serve using REST API and consume by AngularJS.\"}";
+        return "{\"info\": \"Welcome to the demo of Wildfly, Java EE7 and AngularJS. This message is " +
+                "served using REST API and consumed by AngularJS.\"}";
     }
 
 }
