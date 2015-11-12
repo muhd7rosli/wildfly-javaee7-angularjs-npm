@@ -30,6 +30,19 @@ all the Java Beans are located. The frontend development is located in folder `w
 the folder will be optimized and rendered to folder `src/main/webapp` using Bower and Gulp. This development process
 ensure all javascript and web assets are organized.
 
-# Note:
-Tested on Wildfy 8 and 9.
-Tested on Node JS v4.4.2 LTS
+## Backend
++ The backend uses RESTEasy <http://resteasy.jboss.org/> framework to build the REST API.
++ Hibernate database is set up but not used for this demo.
+
+## Frontend
++ The main javascript file is located at `webcontent/src/app/js`.
++ The javascript uses AngularJS. Please read the note for further instruction.
++ The bower configuration and gulp configuration is located at `bower.json` and `gulpfile.js`.
+
+# Note
+This framework is build on a localhost server. It requires modification on the frontend to accommodate actual hosting 
+(eg. openshift).
+
+# Platform Tested
+1. Tested on Wildfy 8 and 9.
+2. Tested on Node JS v4.4.2 LTS
