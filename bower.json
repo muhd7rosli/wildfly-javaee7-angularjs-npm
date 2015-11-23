@@ -5,7 +5,7 @@
     "Muhammad Rosli <muhd7rosli@live.com>"
   ],
   "description": "JSON Web Token testing app",
-  "license": "MIT",
+  "license": "Apache License v2.0",
   "private": true,
   "dependencies": {
     "jquery": "~2.1.3",
